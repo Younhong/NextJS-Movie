@@ -1,6 +1,6 @@
 const API_KEY = process.env.API_KEY;
 
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   async redirects() {
     return [
@@ -19,6 +19,4 @@ const nextConfig = {
       },
     ];
   },
-}
-
-module.exports = nextConfig
+};
